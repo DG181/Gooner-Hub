@@ -14,6 +14,7 @@ local SCRIPTS = {
     [79546208627805]  = "https://raw.githubusercontent.com/DG181/Gooner-Hub/refs/heads/main/99nights",
     [139233844569220] = "https://raw.githubusercontent.com/DG181/Gooner-Hub/refs/heads/main/Zoo%20or%20Oof",
     [17625359962]     = "https://raw.githubusercontent.com/DG181/Gooner-Hub/refs/heads/main/Rivals%20Script.lua",
+    [6035872082]      = "https://raw.githubusercontent.com/DG181/Gooner-Hub/refs/heads/main/Rivals%20Script.lua",
 }
 
 --// LOAD FUNCTION
