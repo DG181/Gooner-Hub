@@ -1,12 +1,11 @@
--- Gooner Hub | Loader (No Key)
-
+-- Gooner Hub | Loader
 local _game = game
 local _loadstring = loadstring
 local _pcall = pcall
 local _tostring = tostring
 local _warn = warn
 
---// NOTIFY
+--NOTIFY
 local function notify(title, msg, dur)
     _pcall(function()
         _game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -17,7 +16,7 @@ local function notify(title, msg, dur)
     end)
 end
 
---// GAME DETECTION
+--GAME DETECTION
 local function getUrl()
     local pid = _tostring(_game.PlaceId)
     local gid = _tostring(_game.GameId)
@@ -38,7 +37,7 @@ local function getUrl()
     return nil
 end
 
---// MAIN RUN
+--MAIN RUN
 local function run()
     local url = getUrl()
 
@@ -49,7 +48,7 @@ local function run()
         return
     end
 
-    -- fetch
+    
     local ok1, content = _pcall(function()
         return _game:HttpGet(url, true)
     end)
@@ -66,7 +65,7 @@ local function run()
         return
     end
 
-    -- execute
+    
     local fn, compErr = _loadstring(content)
     if not fn then
         _warn("[GoonerHub] compile error -> " .. _tostring(compErr))
@@ -81,5 +80,5 @@ local function run()
     end
 end
 
---// START
+
 run()
