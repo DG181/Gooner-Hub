@@ -30,7 +30,7 @@ local function getUrl()
         return "https://raw.githubusercontent.com/DG181/Gooner-Hub/refs/heads/main/Zoo%20or%20Oof"
 
     -- Rivals
-    elseif pid == "17625359962" or pid == "6035872082" or pid == "117398147513099" or pid == "133215910299950" or pid == "71874690745115" then
+    elseif pid == "17625359962" or pid == "6035872082" or pid == "117398147513099" or pid == "133215910299950" or pid == "71874690745115" or pid == "129604661913557" then
         return "https://raw.githubusercontent.com/DG181/Gooner-Hub/refs/heads/main/Rivals%20Script.lua"
     end
 
